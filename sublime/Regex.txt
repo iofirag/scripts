@@ -1,0 +1,7 @@
+// Search all hardcoded text in xml
+>[\t ]*[^{\s<].+?<
+
+// take all text and not <>
+>(.+?)<
+
+{! \$Label.$1 }

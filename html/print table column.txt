@@ -1,0 +1,4 @@
+var tagList = $('th.dataCell a');
+for( var i=0; i<tagList.length; i++) {
+   console.log(tagList[i].innerHTML)
+}
