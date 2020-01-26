@@ -11,16 +11,16 @@ const generateDeferredPromise = () => {
   })()
 }
 
-const kaki = generateDeferredPromise();
+const runWithoutResolved = generateDeferredPromise();
 
 const myFunc = async () => {
   console.log('hey!');
-  await kaki.promise;
+  await runWithoutResolved.promise;
   console.log('how are you??!?!?!??');
 }
 
 myFunc()
 
-kaki.resolve
+runWithoutResolved.resolve
 
 // node deferredPromise.js
